@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="/public/styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+</head>
+<body>
+    <header>
+        <div class="logo">DriveEase </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="/rent_car">Rent Car</a></li>
+                   <li><a href="/contact_page">Contact Us</a></li>
+                <li><a href="/about_us">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="logout-button">
+            <button id="logout">Logout</button>
+        </div>
+    </header>
+
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Easy And Fast Way <br>To <span>Rent</span> Your Car</h1>
+            <p>Discover the easiest and fastest way to rent your dream car with just a few clicks. Whether you need a ride for business, travel, or adventure, we offer a seamless booking experience, competitive prices, and a wide range of vehicles to choose from. Book now and hit the road with confidence!</p>
+            <button class="rent-btn" onclick="window.location.href='/rent_car';">Rent Car</button>
+        </div>
+        <div class="hero-image">
+            <img src="/public/images/BMW_car.png" alt="Car">
+        </div>
+    </section>
+
+    <section class="search-section">
+        <div class="search-box">
+            <label>Pick Up Location</label>
+            <input type="text" placeholder="Mumbai, India" disabled>
+        </div>
+        <div class="search-box">
+            <label>Drop Off Location</label>
+            <input type="text" placeholder="Surat, India" disabled>
+        </div>
+        <div class="search-box">
+            <label>Pick Up Date</label>
+            <input type="date" disabled>
+        </div>
+        <div class="search-box">
+            <label>Return Date</label>
+            <input type="date" disabled>
+        </div>
+        <button class="search-btn" disabled>Search Car</button>
+    </section>
+
+
+    <section id="car-inventory-section">
+        <div class="container">
+            <h1 >Latest <span class="highlight">Inventory</span></h1>
+            <div class="inventory">
+
+                <div class="car-card">
+                    <img src="/public/images/mercedes1.png" alt="Car 3">
+                    <h3>Mercedes-Benz C-Class</h3>
+                    <p class="rating">⭐⭐⭐⭐⭐ <span class="reviews">(12K Reviews)</span></p>
+                    <div class="attribute">
+                        <i class="fa-solid fa-gauge-high"></i>21 kmpl , <i class="fas fa-user-friends"></i>6 seat , <i class='fas fa-gas-pump'></i>Petrol
+                    </div>
+                    <p class="price">30rs/km</p>
+                </div>
+
+                <div class="car-card">
+                    <img src="/public/images/BMW_car.png" alt="Car 1">
+                    <h3>BMW X6 </h3>
+                    <p class="rating">⭐⭐⭐⭐⭐ <span class="reviews">(10K Reviews)</span></p>
+                    <div class="attribute">
+                        <i class="fa-solid fa-gauge-high"></i>21 kmpl , <i class="fas fa-user-friends"></i>6 seat , <i class='fas fa-gas-pump'></i>Petrol
+                    </div>
+                    <p class="price">30rs/km</p>
+                </div>
+                <div class="car-card">
+                    <img src="/public/images/range_rover.png" alt="Car 2">
+                    <h3>Range Rover Sport</h3>
+                    <p class="rating">⭐⭐⭐⭐⭐ <span class="reviews">(9.8K Reviews)</span></p>
+                    <div class="attribute">
+                        <i class="fa-solid fa-gauge-high"></i>21 kmpl , <i class="fas fa-user-friends"></i>6 seat , <i class='fas fa-gas-pump'></i>Petrol
+                    </div>
+                    <p class="price">30rs/km</p>
+                </div>
+                <div class="car-card">
+                    <img src="/public/images/toyata.png" alt="Car 3">
+                    <h3>Toyota Camry</h3>
+                    <p class="rating">⭐⭐⭐⭐⭐ <span class="reviews">(12K Reviews)</span></p>
+                    <div class="attribute">
+                        <i class="fa-solid fa-gauge-high"></i>21 kmpl , <i class="fas fa-user-friends"></i>6 seat , <i class='fas fa-gas-pump'></i>Petrol
+                    </div>
+                    <p class="price">30rs/km</p>
+                </div>
+                <!-- Add more car cards as needed -->
+
+                <div class="car-card">
+                    <img src="/public/images/mercedes1.png" alt="Car 3">
+                    <h3>Mercedes-Benz C-Class</h3>
+                    <p class="rating">⭐⭐⭐⭐⭐ <span class="reviews">(12K Reviews)</span></p>
+                    <div class="attribute">
+                        <i class="fa-solid fa-gauge-high"></i>21 kmpl , <i class="fas fa-user-friends"></i>6 seat , <i class='fas fa-gas-pump'></i>Petrol
+                    </div>
+                    <p class="price">30rs/km</p>
+                </div>
+                <div class="car-card">
+                    <img src="/public/images/mercedes1.png" alt="Car 3">
+                    <h3>Mercedes-Benz C-Class</h3>
+                    <p class="rating">⭐⭐⭐⭐⭐ <span class="reviews">(12K Reviews)</span></p>
+                    <div class="attribute">
+                        <i class="fa-solid fa-gauge-high"></i>21 kmpl , <i class="fas fa-user-friends"></i>6 seat , <i class='fas fa-gas-pump'></i>Petrol
+                    </div>
+                    <p class="price">30rs/km</p>
+                </div>
+                <div class="car-card">
+                    <img src="/public/images/mercedes1.png" alt="Car 3">
+                    <h3>Mercedes-Benz C-Class</h3>
+                    <p class="rating">⭐⭐⭐⭐⭐ <span class="reviews">(12K Reviews)</span></p>
+                    <div class="attribute">
+                        <i class="fa-solid fa-gauge-high"></i>21 kmpl , <i class="fas fa-user-friends"></i>6 seat , <i class='fas fa-gas-pump'></i>Petrol
+                    </div>
+                    <p class="price">30rs/km</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section class="choose-us-section">
+        <h2 class="choose-title">Why <span>Choose</span> Us</h2>
+        <p class="choose-description">We provide top-notch services with reliability, affordability, and customer satisfaction. <br> Our commitment ensures a seamless experience for every customer.</p>
+        
+        <div class="choose-container">
+            
+            <div class="choose-box">
+                <div class="choose-content">
+                    <div class="choose-icon"><i class="fas fa-phone"></i></div>
+                    <div class="choose-text">
+                        <h3>24 Hour Support</h3>
+                        <p>Our dedicated team is available round the clock to assist you.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="choose-box">
+                <div class="choose-content">
+                    <div class="choose-icon"><i class="fas fa-tag"></i></div>
+                    <div class="choose-text">
+                        <h3>Best Price</h3>
+                        <p>Get the best deals without compromising quality.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="choose-box">
+                <div class="choose-content">
+                    <div class="choose-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="choose-text">
+                        <h3>Verified License</h3>
+                        <p>We are fully licensed, ensuring reliability and trust.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="choose-box">
+                <div class="choose-content">
+                    <div class="choose-icon"><i class="fas fa-times-circle"></i></div>
+                    <div class="choose-text">
+                        <h3>Free Cancellation</h3>
+                        <p>Change of plans? No worries! Cancel bookings hassle-free.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="achievement-section">
+        <h2 class="section-title">Our <span class="highlight">Achievement</span></h2>
+        <p class="description">We take pride in our journey and the milestones we've achieved. <br> Our dedication to excellence has helped us grow and serve countless satisfied customers.</p>
+
+        <div class="stats-container">
+            <div class="stat-box">
+                <h3>4000+</h3>
+                <p>Cars Rented</p>
+            </div>
+            <div class="stat-box">
+                <h3>50+</h3>
+                <p>Cities Covered </p>
+            </div>
+            <div class="stat-box">
+                <h3>95%</h3>
+                <p>Customer Satisfaction</p>
+            </div>
+            <div class="stat-box">
+                <h3>10k+</h3>
+                <p>Positive Ratings</p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Brand & About -->
+            <div class="footer-section">
+                <h2 class="brand">DriveEase </h2>
+                <p>Your trusted partner in car rentals, ensuring the best experience for your journey.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+    
+            <!-- Account Section -->
+            <div class="footer-section">
+                <h3>Account</h3>
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Billing</a></li>
+                    <li><a href="#">Notifications</a></li>
+                </ul>
+            </div>
+    
+            <!-- About Section -->
+            <div class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+    
+            <!-- Company Section -->
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            <p>© 2025 All Rights Reserved by GANESH</p>
+            <div class="footer-links">
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const inventory = document.querySelector('.inventory');
+
+// Duplicate the content
+inventory.innerHTML += inventory.innerHTML;
+
+let scrollAmount = 0;
+
+function scrollInventory() {
+    scrollAmount += 1; // Speed of scroll
+    if (scrollAmount >= inventory.scrollWidth / 2) {
+        scrollAmount = 0; // Reset seamlessly when half is scrolled (original content width)
+    }
+    inventory.style.transform = `translateX(-${scrollAmount}px)`;
+    requestAnimationFrame(scrollInventory);
+}
+
+scrollInventory();
+</script>
+</body>
+</html>

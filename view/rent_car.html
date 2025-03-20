@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="/public/styles/rent_car.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+</head>
+<body>
+  <header>
+    <div class="logo">DriveEase </div>
+    <nav>
+        <ul>
+            <li><a href="/index">Home</a></li>
+            <li><a href="/rent_car">Rent Car</a></li>
+               <li><a href="/contact_page">Contact Us</a></li>
+            <li><a href="/about_us">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="logout-button">
+        <button id="logout">Logout</button>
+    </div>
+</header>
+
+
+    <section id="alert-section">
+        <div class="alert-container">
+          <marquee behavior="scroll" direction="left" scrollamount="6">
+            🚨 Important: Limited time offer on car rentals! Book now and get 20% off. 🚗💨 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+            ⚠️ Note: Service unavailable from 2AM - 4AM due to maintenance. 🛠️
+          </marquee>
+        </div>
+      </section>
+      
+
+
+    <section id="rent-car-section">
+        <div class="rent-car-container">
+      
+          <!-- Car Card 1 -->
+          <div class="rent-car-card">
+            <div class="car-image">
+              <img src="/public/images/BMW_car.png" alt="Peugeot 107">
+            </div>
+            <div class="car-details">
+              <h3>Small <span class="highlight">Peugeot 107</span></h3>
+              <ul>
+                <li><i class="fa-solid fa-gauge-high"></i> 21 kmpl</li>
+                <li><i class="fas fa-user-friends"></i> 6 seat</li>
+                <li><i class="fas fa-gas-pump"></i> Petrol</li>
+                <li><i class="fas fa-snowflake"></i> Air Conditioning</li>
+              </ul>
+            </div>
+            <div class="car-action">
+              <p class="price">30rs/km</p>
+              <a href="contact_page?car=car1" class="rent-btn">Continue</a>
+            </div>
+          </div>
+      
+          <!-- Repeat the same structure for more cars -->
+          <div class="rent-car-card">
+            <div class="car-image">
+              <img src="/public/images/mercedes1.png" alt="Peugeot 308">
+            </div>
+            <div class="car-details">
+              <h3>Economy <span class="highlight">Peugeot 308 1.8A</span></h3>
+              <ul>
+                <li><i class="fa-solid fa-gauge-high"></i> 21 kmpl</li>
+                <li><i class="fas fa-user-friends"></i> 6 seat</li>
+                <li><i class="fas fa-gas-pump"></i> Petrol</li>
+                <li><i class="fas fa-snowflake"></i> Air Conditioning</li>
+              </ul>
+            </div>
+            <div class="car-action">
+              <p class="price">30rs/km</p>
+              <a href="contact_page?car=car2" class="rent-btn">Continue</a>
+            </div>
+          </div>
+          
+
+          <div class="rent-car-card">
+            <div class="car-image">
+              <img src="/public/images/range_rover.png" alt="Peugeot 308">
+            </div>
+            <div class="car-details">
+              <h3>Economy <span class="highlight">Peugeot 308 1.8A</span></h3>
+              <ul>
+                <li><i class="fa-solid fa-gauge-high"></i> 21 kmpl</li>
+                <li><i class="fas fa-user-friends"></i> 6 seat</li>
+                <li><i class="fas fa-gas-pump"></i> Petrol</li>
+                <li><i class="fas fa-snowflake"></i> Air Conditioning</li>
+              </ul>
+            </div>
+            <div class="car-action">
+              <p class="price">30rs/km</p>
+              <a href="contact_page?car=car3" class="rent-btn">Continue</a>
+            </div>
+          </div>
+
+
+          <div class="rent-car-card">
+            <div class="car-image">
+              <img src="/public/images/toyata.png" alt="Peugeot 308">
+            </div>
+            <div class="car-details">
+              <h3>Economy <span class="highlight">Peugeot 308 1.8A</span></h3>
+              <ul>
+                <li><i class="fa-solid fa-gauge-high"></i> 21 kmpl</li>
+                <li><i class="fas fa-user-friends"></i> 6 seat</li>
+                <li><i class="fas fa-gas-pump"></i> Petrol</li>
+                <li><i class="fas fa-snowflake"></i> Air Conditioning</li>
+              </ul>
+            </div>
+            <div class="car-action">
+              <p class="price">30rs/km</p>
+              <a href="contact_page?car=car4" class="rent-btn">Continue</a>
+            </div>
+          </div>
+        </div>
+      </section>      
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Brand & About -->
+            <div class="footer-section">
+                <h2 class="brand">DriveEase </h2>
+                <p>Your trusted partner in car rentals, ensuring the best experience for your journey.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+    
+            <!-- Account Section -->
+            <div class="footer-section">
+                <h3>Account</h3>
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Billing</a></li>
+                    <li><a href="#">Notifications</a></li>
+                </ul>
+            </div>
+    
+            <!-- About Section -->
+            <div class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+    
+            <!-- Company Section -->
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            <p>© 2025 All Rights Reserved by GANESH</p>
+            <div class="footer-links">
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

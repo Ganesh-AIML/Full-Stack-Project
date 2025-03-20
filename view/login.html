@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/styles/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-section">
+        <h1 id="form-title">Sign In</h1>
+        <form id="auth-form" action="/login" method="POST">
+          <label for="username">Username</label>
+          <input
+            id="username"
+            type="email"
+            name="username"
+            placeholder="Username"
+            required
+          />
+          <label for="password">Password</label>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+
+          <div id="confirm-password-container"></div>
+
+          <button type="submit" id="submit-btn">Sign In</button>
+          <p class="forgot-password">
+            <a href="#" id="forgot-password-link">Forgot password?</a>
+          </p>
+        </form>
+      </div>
+
+      <!-- Forgot Password Modal/Popup -->
+      <div id="forgot-password-modal" style="display: none;" class="modal">
+        <div class="modal-content">
+          <h2>Reset Password</h2>
+          <form id="forgot-password-form" action="/forgot-password" method="POST">
+            <label for="reset-username">Enter your Email</label>
+            <input type="text" id="reset-username" name="username" placeholder="Email" required />
+            <button type="submit">Proceed to Reset Password</button>
+          </form>
+          <button id="close-modal">Close</button>
+        </div>
+      </div>
+      
+
+      <div class="info-section">
+        <h2 id="welcome-text">Welcome Back!</h2>
+        <p id="info-text">Don't have an account?</p>
+        <button id="toggle-btn">Sign Up</button>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/public/functions/login.js"></script>    
+  </body>
+</html>

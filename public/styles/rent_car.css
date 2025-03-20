@@ -1,0 +1,446 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li {
+    display: inline;
+    font-size: 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: blue;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+nav ul li a.active,
+nav ul li a:hover {
+    color: blue;
+}
+
+nav ul li a.active::after, 
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.logout-button button {
+  padding: 8px 16px;
+  background-color: #0d98fb;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button button:hover {
+  background-color: #0d98fb9c;
+  border: 1px solid #0074f8;
+}
+
+/*===============================================Alert Section===============================================================================*/
+
+#alert-section {
+    margin-top: 20px;
+    width: 100%;
+    background-color: yellow; /* Red alert background */
+    padding: 10px 0;
+    border: 2px solid red;
+  }
+  
+  .alert-container {
+    width: 90%;
+    margin: 0 auto;
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  marquee {
+    white-space: nowrap;
+  }
+  
+
+/*======================================================Rent Car Section========================================================================*/
+/* Container styling */
+#rent-car-section {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  
+  .rent-car-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Car card */
+  .rent-car-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .rent-car-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  }
+  
+  /* Car image */
+  .car-image img {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Car details */
+  .car-details {
+    flex: 1;
+    padding: 0 20px;
+    text-align: left;
+  }
+  
+  .car-details h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .car-details .highlight {
+    color: #1e90ff;
+  }
+  
+  .car-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  
+  /* Price and action */
+  .car-action {
+    text-align: right;
+  }
+  
+  .price {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .rent-btn {
+    background-color: #1e90ff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .rent-btn:hover {
+    background-color: #005bb5;
+  }
+
+  .car-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px; /* space between each spec */
+}
+
+.car-details ul li {
+    display: flex;
+    align-items: center;
+    font-size: 14px; /* sets consistent text size */
+    color: #333;
+    gap: 5px; /* space between icon and text */
+}
+
+.car-details ul li i {
+    font-size: 14px; /* controls icon size */
+    color: #333; /* makes color consistent */
+}
+
+
+  
+/*==============================================================================================================================*/
+
+
+.footer {
+    background-color: #111;
+    color: #ccc;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    width: 22%;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #4da8da;
+}
+
+/* Brand Section */
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+footer .highlight {
+    color: #4da8da;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #ccc;
+    margin-right: 10px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #4da8da;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #4da8da;
+}
+
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+
+  html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    
+
+    header {
+      padding: 10px 12px;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      
+      /* Flex container for layout */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .logo {
+      font-size: 13px;
+      font-weight: bold;
+  }
+  
+  /* Navigation list - flex to align horizontally */
+  nav ul {
+      display: flex;          /* Make the list horizontal */
+      gap: 20px;              /* Space between links */
+      list-style: none;       /* Remove bullets */
+      padding: 0;             /* Remove default padding */
+  }
+  
+  /* Individual list items */
+  nav ul li {
+      font-size: 11px;
+      font-weight: bold;
+      white-space: nowrap;    /* Prevent line breaks */
+  }
+  
+  .logout-button button {
+      padding: 6px 8px;
+      font-size: 10px;
+      border-radius: 5px;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #0d98fb;
+      transition: background-color 0.3s ease;
+  }
+
+  .logout-button button:hover {
+      background-color: #0d98fb9c;
+      border: 1px solid #0074f8;
+  }
+
+/* ===================================== 2nd section  ============================================ */
+
+
+.rent-car-card {
+  flex-direction: column;
+  align-items:center;
+  text-align: center;
+  size-adjust:inherit;
+}
+
+.car-action {
+  width: 100%;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.rent-car-container {
+  gap: 30px;
+}
+
+.car-image img {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+}
+
+.car-details h3 {
+  font-size: 21px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.car-details ul {
+  font-weight: bold;
+  gap: 20px;
+  flex-wrap:nowrap;
+}
+
+.car-details ul li {
+  font-size: 15px;
+  color: #555;
+}
+
+.car-action {
+  text-align: center;
+}
+
+.rent-btn {
+  padding: 8px 18px;
+  font-weight: bold;
+}
+/* ===================================== footer section  ============================================ */
+
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+  .footer-section {
+      width: 100%;
+  }
+  .social-icons {
+      justify-content: center;
+  }
+}
+
+

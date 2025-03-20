@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #ffffffc3, #3d76e08f);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    max-width: 400px;
+    width: 90%;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-section, .info-section {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form-section {
+    background-color: white;
+}
+
+.form-section input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 0.8rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(-40deg, #04067b8c, #0694edc3);
+    color: #fff;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.forgot-password {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.info-section {
+    background: linear-gradient(-40deg, #04067b8c, #0694edc3);
+    color: #fff;
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-content h2,
+.info-content p {
+    margin: 0.5rem 0;
+}
+
+    .modal {
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .modal-content {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        width: 300px;
+        text-align: center;
+    }
+    .modal input{
+        width: 100%;
+    margin: 10px 0;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    }
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        max-width: 800px;
+        height: 500px;
+    }
+
+    .form-section, .info-section {
+        width: 50%;
+        height: 100%;
+        padding: 3rem;
+    }
+
+    .info-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-content {
+        width: 100%;
+    }
+
+    .form-section {
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+    }
+}
