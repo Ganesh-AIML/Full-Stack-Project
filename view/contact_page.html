@@ -29,12 +29,14 @@
             <div class="contact-form">
                 <h2>Just say Hello!</h2>
                 <p>Let us know more about you!</p>
-                <form action="https://formsubmit.co/51ab718d292e394789060bc112bd1797" method="POST">
+
+                <form id="contactForm" method="POST">
                     <div class="form-group">
                         <input type="text" placeholder="First Name" name="first_name">
                         <input type="text" placeholder="Last Name" name="last_name">
                     </div>
                     <div class="form-group">
+                        <input type="hidden" id="timeField" name="submission-time">
                         <input type="email" placeholder="Mail" name="email">
                         <input type="tel" placeholder="Phone" name="phone_number">
                     </div>
@@ -48,10 +50,10 @@
                       </select>
                       
                     <textarea placeholder="Message" name="message"></textarea>
-                    <input type="hidden" name="_captcha" value="false"><!-- to avoid captcha -->
-                    <input type="hidden" name="_template" value="table"><!-- send data in tabular form -->
-                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/view/contact_page.html"><!-- redirect the same page after submit -->
-                    <button class="submit-btn">SUBMIT</button>
+                    <!-- <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/view/contact_page.html"> -->
+                    <button class="submit-btn" type="submit">SUBMIT</button>
                 </form>
             </div>
             
@@ -132,6 +134,41 @@
     if (selectedCar) {
         $('#optional').val(selectedCar); // Set the select input value
     }
+});
+
+$(document).ready(function() {
+  $('#contactForm').submit(function(e) {
+    e.preventDefault(); // Prevent the default form submission behavior
+
+    // ✅ Set current time just before submitting
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const currentTime = `${hours}:${minutes}`;
+
+    // ✅ Update the hidden submission_time field value
+    $('#timeField').val(currentTime);
+
+    // ✅ Send the form data to your Node.js backend using AJAX
+    $.ajax({
+      url: 'http://localhost:3000/send-email', // Your backend API endpoint
+      method: 'POST',
+      data: $(this).serialize(), // Serialize form data for sending
+      success: function(response) {
+        alert('✅ Message sent successfully!');
+        $('#contactForm')[0].reset(); // Clear the form fields after successful submission
+      },
+      error: function(err) {
+        alert('❌ Failed to send message. Please try again.');
+        console.error(err); // Optional: Debugging the error in the browser console
+      }
+    });
+  });
+});
+
+//logout operation
+$('#logout').on('click', function() {
+    window.location.href = '/logout';
 });
     </script>
 </body>
